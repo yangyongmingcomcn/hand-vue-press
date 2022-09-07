@@ -8,5 +8,7 @@ module.exports = {
       return moment(timestamp).format("LLLL");
     },
   },
-  "vuepress-plugin-auto-sidebar": {},
+  "vuepress-plugin-auto-sidebar": {
+    sidebarDepth: 4,
+  },
 };

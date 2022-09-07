@@ -2,7 +2,7 @@
 
 ## SRM代码风格
 
-#### 1、命名
+### 1、命名
 
 - 函数命名
 
@@ -108,7 +108,7 @@
 
   
 
-#### 2、注释
+### 2、注释
 
 - js、css/less文件说明注释
 
@@ -198,7 +198,7 @@
 
   
 
-#### 3、引用路径
+### 3、引用路径
 
 ```javascript
 // bad
@@ -210,7 +210,7 @@ import autobind from '@/utils/autobind
 
 
 
-#### 4、国际化
+### 4、国际化
 
 界面多语言采用统一的命名规范，开发者在开发具体功能的时候要按照语言 code 定义描述，不能直接写死描述。
 
@@ -312,7 +312,7 @@ import autobind from '@/utils/autobind
 
   
 
-#### 5、依赖引入
+### 5、依赖引入
 
 应将引入文件归为三类：
 
@@ -338,7 +338,7 @@ import Detail from './Detail';
 
 
 
-#### 6、view、model、service 相互分离
+### 6、view、model、service 相互分离
 
 view、model、service应各司其职，需避免相互之间的混用。
 
@@ -375,7 +375,7 @@ export async function createNodeGroup(params) {
 
 
 
-#### 7、使用getResponse处理请求
+### 7、使用getResponse处理请求
 
 ```javascript
 // bad
@@ -404,7 +404,7 @@ dispatch({
 
 
 
-#### 8、公共render 函数使用
+### 8、公共render 函数使用
 
 常用公共render函数：
 
@@ -440,7 +440,7 @@ priorityRender: 优先级渲染(低中高)
 
 
 
-#### 9、缓存组件
+### 9、缓存组件
 
 当列表页跳转至详情页时，应当缓存列表页的查询参数，分页参数。
 
@@ -487,7 +487,7 @@ import withProps from 'utils/withProps';
 
 ## SRM UI规范
 
-#### 1、loading
+### 1、loading
 
 - loading使用方式
 
@@ -548,7 +548,7 @@ import withProps from 'utils/withProps';
 
   
 
-#### 2、表单
+### 2、表单
 
 - 清除缓存
 
@@ -610,7 +610,7 @@ import withProps from 'utils/withProps';
 
   
 
-#### 3、列表
+### 3、列表
 
 - 列宽
 
@@ -693,7 +693,7 @@ import withProps from 'utils/withProps';
 
      
 
-#### 4、按钮
+### 4、按钮
 
 - 顶部按钮
 
@@ -793,7 +793,7 @@ import withProps from 'utils/withProps';
   
   
 
-#### 5、操作提示弹框
+### 5、操作提示弹框
 
 - 操作提示弹框
 
@@ -815,7 +815,7 @@ import withProps from 'utils/withProps';
 
 ## 前端自测、提交、分支管理规范
 
-#### 1、自测
+### 1、自测
 
 - 本地环境
 
@@ -857,7 +857,7 @@ import withProps from 'utils/withProps';
 
      
 
-#### 2、提交
+### 2、提交
 
 - 提交信息
 
@@ -893,7 +893,7 @@ import withProps from 'utils/withProps';
 
   
 
-#### 3、分支管理
+### 3、分支管理
 
 -    分支创建
 
