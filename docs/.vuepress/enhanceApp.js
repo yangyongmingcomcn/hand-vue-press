@@ -2,6 +2,14 @@ import { checkAuth } from "./login/helper";
 import Login from "./login/Login";
 
 export default ({ Vue, options, router, siteData }) => {
+  router.beforeEach((to, from, next) => {
+    if (!checkAuth() && to.path !== "/") {
+      next("/");
+    } else {
+      next();
+    }
+  });
+
   Vue.mixin({
     mounted() {
       const doCheck = () => {
@@ -13,11 +21,6 @@ export default ({ Vue, options, router, siteData }) => {
             singletonKey: "employee-login",
             maxButton: false,
             closeButton: false,
-            callback: (data) => {
-              if (data === true) {
-                // do some stuff after login
-              }
-            },
           });
         }
       };
