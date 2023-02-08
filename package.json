@@ -6,6 +6,7 @@
   "license": "YYM",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.9.7",
+    "v-dialogs": "^2.2.0",
     "vuepress": "^1.9.7",
     "vuepress-plugin-auto-sidebar": "^2.3.2"
   },
