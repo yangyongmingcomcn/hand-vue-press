@@ -4,11 +4,10 @@ heroImage: /logo.png
 heroText: 智协供应链 - 前端知识库
 tagline: 一个人走的更快，一群人可以走的更远，前提是统一的策略，还要不断地反省和优化
 features:
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+- title: 前端开发规范
+  details: 提升维护及迭代效率、提高代码健壮性、减少团队之间的不一致性
+- title: 前端通用组件
+  details: 最大限度避免重复造轮子的情况发生
+- title: 前端常见问题汇总
 footer: Powered by Hand SRM Team
 ---

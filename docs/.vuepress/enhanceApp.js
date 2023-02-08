@@ -2,16 +2,16 @@ import { checkAuth } from "./login/helper";
 import Login from "./login/Login";
 
 export default ({ Vue, options, router, siteData }) => {
-  router.beforeEach((to, from, next) => {
-    if (!checkAuth() && to.path !== "/") {
-      next("/");
-    } else {
-      next();
-    }
-  });
-
   Vue.mixin({
     mounted() {
+      router.beforeEach((to, from, next) => {
+        if (!checkAuth() && to.path !== "/") {
+          next("/");
+        } else {
+          next();
+        }
+      });
+
       const doCheck = () => {
         if (!checkAuth()) {
           this.$dlg.modal(Login, {
