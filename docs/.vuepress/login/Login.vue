@@ -42,8 +42,12 @@ export default {
         window.localStorage.setItem(STORAGE_KEY, data);
         this.$emit("close", true);
       } else {
+        const message =
+          this.username && this.password && userData?.password !== this.password
+            ? "用户名或密码不正确，请修改后再试！"
+            : "请输入用户名或密码！";
         import("v-dialogs").then((resp) => {
-          resp.DialogToast("用户名或密码不正确，请修改后再试！");
+          resp.DialogToast(message);
         });
       }
     },
