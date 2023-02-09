@@ -23,7 +23,7 @@ module.exports = {
           title: "前端组件库",
           collapsable: true,
           sidebarDepth: 1,
-          children: ["/components/README"],
+          children: ["/components/README", "/components/ProLov", "/components/Utils"],
         },
       ],
       "/debugging/": [
@@ -32,6 +32,14 @@ module.exports = {
           collapsable: true,
           sidebarDepth: 1,
           children: ["/debugging/README"],
+        },
+      ],
+      "/training/": [
+        {
+          title: "新人指引",
+          collapsable: true,
+          sidebarDepth: 1,
+          children: ["/training/README"],
         },
       ],
     },

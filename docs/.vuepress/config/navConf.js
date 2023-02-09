@@ -3,6 +3,7 @@ module.exports = [
   { text: "前端开发规范", link: "/front/" },
   { text: "前端组件库", link: "/components/" },
   { text: "前端调试技巧", link: "/debugging/" },
+  { text: "新人指引", link: "/training/" },
   { text: "猪齿鱼平台", link: "https://open-console.going-link.com/" },
   { text: "GitLab", link: "https://open-gitlab.going-link.com/" },
   { text: "OP环境", link: "https://isrm-op-dev.going-link.com/" },
@@ -28,6 +29,14 @@ module.exports = [
       {
         text: "DvaJS",
         link: "https://dvajs.com/",
+      },
+      {
+        text: "UmiJS",
+        link: "https://v3.umijs.org/zh-CN/",
+      },
+      {
+        text: "ES6",
+        link: "https://es6.ruanyifeng.com/",
       },
     ],
   },

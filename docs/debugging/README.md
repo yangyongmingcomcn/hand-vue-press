@@ -100,7 +100,8 @@ chrome开发者工具最常用的四个功能模块
 
 下载插件，打开谷歌浏览器的扩展程序管理，把.crx文件拖拽到程序管理里面就可以完成安装，下图为安装完成。
 
-下载地址：https://crxdl.com
+下载地址：[https://crxdl.com](https://crxdl.com)
+
 ![front-debugging-1](./assets/front-debugging-11.png)
 
 ### 2、验证安装

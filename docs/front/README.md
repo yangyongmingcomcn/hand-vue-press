@@ -1045,7 +1045,7 @@ import withProps from 'utils/withProps';
 
 安装浏览器插件modheader（谷歌和火狐都有），访问OP环境时配置，本地不需要。
 
-下载地址：https://crxdl.com
+下载地址：[https://crxdl.com](https://crxdl.com)
 
 ![cux-standard-five](./assets/cux-standard-five.png)
 
