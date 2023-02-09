@@ -9,39 +9,5 @@ module.exports = {
   themeConfig: {
     lastUpdated: "更新时间",
     nav: navConf,
-    sidebar: {
-      "/front/": [
-        {
-          title: "前端开发规范",
-          collapsable: true,
-          sidebarDepth: 1,
-          children: ["/front/README"],
-        },
-      ],
-      "/components/": [
-        {
-          title: "前端组件库",
-          collapsable: true,
-          sidebarDepth: 1,
-          children: ["/components/README", "/components/ProLov", "/components/Utils"],
-        },
-      ],
-      "/debugging/": [
-        {
-          title: "前端调试技巧",
-          collapsable: true,
-          sidebarDepth: 1,
-          children: ["/debugging/README"],
-        },
-      ],
-      "/training/": [
-        {
-          title: "新人指引",
-          collapsable: true,
-          sidebarDepth: 1,
-          children: ["/training/README"],
-        },
-      ],
-    },
   },
 };

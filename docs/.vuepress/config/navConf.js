@@ -1,6 +1,6 @@
 module.exports = [
   { text: "首页", link: "/" },
-  { text: "前端开发规范", link: "/front/" },
+  { text: "前端开发规范", link: "/standard/" },
   { text: "前端组件库", link: "/components/" },
   { text: "前端调试技巧", link: "/debugging/" },
   { text: "新人指引", link: "/training/" },
