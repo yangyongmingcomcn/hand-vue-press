@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SRM代码风格 | 智协供应链 - 前端知识库</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/hand-vue-press/logo.png">
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/hand-vue-press/assets/css/0.styles.af754a4d.css" as="style"><link rel="preload" href="/hand-vue-press/assets/js/app.ba659284.js" as="script"><link rel="preload" href="/hand-vue-press/assets/js/3.7f8072c2.js" as="script"><link rel="preload" href="/hand-vue-press/assets/js/19.76c3fcf2.js" as="script"><link rel="prefetch" href="/hand-vue-press/assets/js/1.ffe05c0f.js"><link rel="prefetch" href="/hand-vue-press/assets/js/10.1f276aff.js"><link rel="prefetch" href="/hand-vue-press/assets/js/11.b49a6f8e.js"><link rel="prefetch" href="/hand-vue-press/assets/js/12.856b9b82.js"><link rel="prefetch" href="/hand-vue-press/assets/js/13.2bf27913.js"><link rel="prefetch" href="/hand-vue-press/assets/js/14.13cb4fd4.js"><link rel="prefetch" href="/hand-vue-press/assets/js/15.b29fafa4.js"><link rel="prefetch" href="/hand-vue-press/assets/js/16.bbb236d5.js"><link rel="prefetch" href="/hand-vue-press/assets/js/17.05303ac2.js"><link rel="prefetch" href="/hand-vue-press/assets/js/18.ce50bd00.js"><link rel="prefetch" href="/hand-vue-press/assets/js/4.cad0faac.js"><link rel="prefetch" href="/hand-vue-press/assets/js/5.4213819d.js"><link rel="prefetch" href="/hand-vue-press/assets/js/6.d4c57c89.js"><link rel="prefetch" href="/hand-vue-press/assets/js/7.fc56535e.js"><link rel="prefetch" href="/hand-vue-press/assets/js/8.287606a7.js"><link rel="prefetch" href="/hand-vue-press/assets/js/9.2c9fc395.js">
+    <link rel="stylesheet" href="/hand-vue-press/assets/css/0.styles.af754a4d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/hand-vue-press/" class="home-link router-link-active"><!----> <span class="site-name">智协供应链 - 前端知识库</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/hand-vue-press/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/hand-vue-press/standard/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  前端开发规范
+</a></div><div class="nav-item"><a href="/hand-vue-press/components/" class="nav-link">
+  前端组件库
+</a></div><div class="nav-item"><a href="/hand-vue-press/debugging/" class="nav-link">
+  前端调试技巧
+</a></div><div class="nav-item"><a href="/hand-vue-press/training/" class="nav-link">
+  新人指引
+</a></div><div class="nav-item"><a href="https://open-console.going-link.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  猪齿鱼平台
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://open-gitlab.going-link.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitLab
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://isrm-op-dev.going-link.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  OP环境
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="参考资料" class="dropdown-title"><span class="title">参考资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="参考资料" class="mobile-dropdown-title"><span class="title">参考资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://open-hand.github.io/choerodon-ui/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Choerodon-UI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://open.hand-china.com/hzero-ui/index-cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  HZero-UI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="http://hippius-ui.hips.hand-china.com/#/zh-CN/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Hips-UI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://cn.mobx.js.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  MobX
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://dvajs.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  DvaJS
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://v3.umijs.org/zh-CN/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  UmiJS
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://es6.ruanyifeng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ES6
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/hand-vue-press/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/hand-vue-press/standard/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  前端开发规范
+</a></div><div class="nav-item"><a href="/hand-vue-press/components/" class="nav-link">
+  前端组件库
+</a></div><div class="nav-item"><a href="/hand-vue-press/debugging/" class="nav-link">
+  前端调试技巧
+</a></div><div class="nav-item"><a href="/hand-vue-press/training/" class="nav-link">
+  新人指引
+</a></div><div class="nav-item"><a href="https://open-console.going-link.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  猪齿鱼平台
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://open-gitlab.going-link.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitLab
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://isrm-op-dev.going-link.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  OP环境
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="参考资料" class="dropdown-title"><span class="title">参考资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="参考资料" class="mobile-dropdown-title"><span class="title">参考资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://open-hand.github.io/choerodon-ui/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Choerodon-UI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://open.hand-china.com/hzero-ui/index-cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  HZero-UI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="http://hippius-ui.hips.hand-china.com/#/zh-CN/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Hips-UI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://cn.mobx.js.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  MobX
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://dvajs.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  DvaJS
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://v3.umijs.org/zh-CN/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  UmiJS
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://es6.ruanyifeng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ES6
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>智协供应链 - 前端开发规范</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/hand-vue-press/standard/" aria-current="page" class="active sidebar-link">SRM代码风格</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/hand-vue-press/standard/#_1、命名" class="sidebar-link">1、命名</a></li><li class="sidebar-sub-header"><a href="/hand-vue-press/standard/#_2、注释" class="sidebar-link">2、注释</a></li><li class="sidebar-sub-header"><a href="/hand-vue-press/standard/#_3、引用路径" class="sidebar-link">3、引用路径</a></li><li class="sidebar-sub-header"><a href="/hand-vue-press/standard/#_4、国际化" class="sidebar-link">4、国际化</a></li><li class="sidebar-sub-header"><a href="/hand-vue-press/standard/#_5、依赖引入" class="sidebar-link">5、依赖引入</a></li><li class="sidebar-sub-header"><a href="/hand-vue-press/standard/#_6、view、model、service-相互分离" class="sidebar-link">6、view、model、service 相互分离</a></li><li class="sidebar-sub-header"><a href="/hand-vue-press/standard/#_7、使用getresponse处理请求" class="sidebar-link">7、使用getResponse处理请求</a></li><li class="sidebar-sub-header"><a href="/hand-vue-press/standard/#_8、公共render-函数使用" class="sidebar-link">8、公共render 函数使用</a></li><li class="sidebar-sub-header"><a href="/hand-vue-press/standard/#_9、日期时间" class="sidebar-link">9、日期时间</a></li><li class="sidebar-sub-header"><a href="/hand-vue-press/standard/#_10、缓存组件" class="sidebar-link">10、缓存组件</a></li><li class="sidebar-sub-header"><a href="/hand-vue-press/standard/#_11、组件拆分原则" class="sidebar-link">11、组件拆分原则</a></li></ul></li><li><a href="/hand-vue-press/standard/1-SRM-UI.html" class="sidebar-link">SRM UI规范</a></li><li><a href="/hand-vue-press/standard/2-SRM-CUX.html" class="sidebar-link">SRM二开规范</a></li><li><a href="/hand-vue-press/standard/3-SRM-GIT.html" class="sidebar-link">前端自测、提交、分支管理规范</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="srm代码风格"><a href="#srm代码风格" class="header-anchor">#</a> SRM代码风格</h1> <h2 id="_1、命名"><a href="#_1、命名" class="header-anchor">#</a> 1、命名</h2> <ul><li><p>函数命名</p> <p>能够表明这个函数的用处，使用驼峰式命名，禁止使用拼音命名。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// bad </span>
+<span class="token function">handleSave</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment">// good</span>
+<span class="token function">handleSaveCompany</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>变量命名</p> <p>能够表明这个变量的用处，使用驼峰式命名，禁止使用拼音命名。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// bad </span>
+<span class="token literal-property property">visible</span><span class="token operator">:</span> <span class="token boolean">false</span>
+
+<span class="token comment">// good</span>
+<span class="token literal-property property">modalVisible</span><span class="token operator">:</span> <span class="token boolean">false</span>
+</code></pre></div></li> <li><p>文件命名</p> <p>能够表明这个文件的用处，使用驼峰式命名，禁止使用拼音命名，禁止含有特殊符号。</p> <p>组件类型文件，除页面入口文件index.js开头为小写，其余组件类型文件开头均为大写。</p> <p>model、service、util、DS类型文件均以小写开头。</p> <p>使用Choerodon UI开发时，一个页面服务使用一个js文件存放该页面服务的所有DataSet。 文件命名格式统一为页面服务名+DS。</p> <p>约定：页面入口文件index.js、详情页Detail.js、创建页Create.js等。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// bad </span>
+<span class="token literal-property property">入口文件</span><span class="token operator">:</span> List<span class="token punctuation">.</span>js
+
+<span class="token comment">// good</span>
+<span class="token literal-property property">入口文件</span><span class="token operator">:</span> index<span class="token punctuation">.</span>js
+</code></pre></div></li> <li><p>文件夹命名</p> <p>能够表明这个文件夹的用处，使用驼峰式命名，长度适中，禁止使用拼音命名，禁止含有特殊符号。</p> <p>组件类型文件夹开头均为大写，功能类型文件夹开头均为小写（components、utils、models、store）。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// bad </span>
+<span class="token literal-property property">组件文件夹</span><span class="token operator">:</span> header
+<span class="token literal-property property">功能文件夹</span><span class="token operator">:</span> Components
+
+<span class="token comment">// good</span>
+<span class="token literal-property property">组件文件夹</span><span class="token operator">:</span> Header
+<span class="token literal-property property">功能文件夹</span><span class="token operator">:</span> components
+</code></pre></div></li> <li><p>路由命名</p> <p>路由采用三段式结构。</p> <p>第一段：为模块名称，/ssrc、/sslm、/spuc、/spcm等。</p> <p>第二段：为页面名称英文翻译，均采用小写单词，单词与单词之间使用“-”连接。</p> <p>第三段：为页面的功能名称，如：list、detail、create等。</p> <p>约定：第二段，由两至三个单词拼接而成；第三段，由一至两个单词拼接而成。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// bad </span>
+<span class="token literal-property property">路由（不带参）</span><span class="token operator">:</span> <span class="token operator">/</span>ssrc<span class="token operator">/</span>test<span class="token operator">-</span>test<span class="token operator">-</span>Test<span class="token operator">-</span>Test<span class="token operator">/</span>test<span class="token operator">-</span>Test<span class="token operator">-</span>List
+<span class="token literal-property property">路由（带参）</span><span class="token operator">:</span> <span class="token operator">/</span>ssrc<span class="token operator">/</span>test<span class="token operator">-</span>test<span class="token operator">-</span>Test<span class="token operator">-</span>Test<span class="token operator">/</span>test<span class="token operator">-</span>Test<span class="token operator">-</span>Detail<span class="token operator">/</span><span class="token operator">:</span>id
+
+<span class="token comment">// good</span>
+<span class="token literal-property property">路由（不带参）</span><span class="token operator">:</span> <span class="token operator">/</span>ssrc<span class="token operator">/</span>inquiry<span class="token operator">-</span>hall<span class="token operator">/</span>list
+<span class="token literal-property property">路由（带参）</span><span class="token operator">:</span> <span class="token operator">/</span>ssrc<span class="token operator">/</span>inquiry<span class="token operator">-</span>hall<span class="token operator">/</span>detail<span class="token operator">/</span><span class="token operator">:</span>id
+</code></pre></div></li> <li><p>组件属性命名</p> <p>组件属性如果是函数，使用on前缀。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// bad</span>
+<span class="token operator">&lt;</span>TableList search<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleSearchCalendar<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+
+<span class="token comment">// good</span>
+<span class="token operator">&lt;</span>TableList onSearch<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleSearchCalendar<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+</code></pre></div></li></ul> <h2 id="_2、注释"><a href="#_2、注释" class="header-anchor">#</a> 2、注释</h2> <ul><li><p>函数注释</p> <p>@params 说明参数</p> <p>@returns 返回值</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code></code></pre></div></li></ul> <p>/**</p> <ul><li>handSave – 保存</li> <li>@params {object} params – 单据头信息</li> <li>@return {object} 接口返回信息
+*/
+const handleSave(params) =&gt; {
+// ... js code
+return data;
+};</li></ul> <div class="language- extra-class"><pre class="language-text"><code>
+
+
+- js、css/less文件说明注释
+
+@description 说明文件名称及用途
+
+@date 创建日期
+
+@author 作者
+
+@version 版本号
+
+@copyright 公司信息
+
+```javascript
+// test.js
+
+/**
+ * test - 测试代码
+ * @date: 2022-03-15
+ * @author: yourname &lt;yourname@hand-china.com&gt;
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2022, Hand
+ */
+
+// ... js code
+</code></pre></div><ul><li><p>数据模型model</p> <p>注明namespace用途</p> <p>注明state内各状态变量用途</p> <p>effects异步方法详细注明方法逻辑及用途</p> <p>reducers状态处理方法需要详细注明方法逻辑及用途</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+	<span class="token literal-property property">namespace</span><span class="token operator">:</span> <span class="token string">'test'</span><span class="token punctuation">,</span> <span class="token comment">// 测试model </span>
+	<span class="token literal-property property">state</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// 编码</span>
+		<span class="token literal-property property">list</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 数据集合</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">effects</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token comment">// 查询list数据</span>
+		<span class="token operator">*</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> payload <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> put<span class="token punctuation">,</span> call <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			code<span class="token operator">...</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">reducers</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token comment">// 合并state状态数据,生成新的state </span>
+		<span class="token function">updateStateReducer</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> <span class="token punctuation">{</span> payload <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token punctuation">{</span>
+				<span class="token operator">...</span>state<span class="token punctuation">,</span>
+				<span class="token operator">...</span>payload<span class="token punctuation">,</span>
+			<span class="token punctuation">}</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div></li> <li><p>接口service</p> <p>@async □一般情况下使用async函数需要注明</p> <p>@params 说明参数</p> <p>@returns □返回值</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ *	查询 说明接口逻辑用途
+ *	@async
+ *	@function queryMembers 接口函数名称
+ *	@param {object} params - 接口参数
+ *	@param {!number} [params.page = 0] - 数据页码
+ *	@param {!number} [params.size = 10] - 分页大小
+ *	@returns {object} fetch Promise 默认返回值
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">query</span><span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+	<span class="token keyword">return</span> <span class="token function">request</span><span class="token punctuation">(</span><span class="token string">'/api'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">query</span><span class="token operator">:</span> params <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>公共组件</p> <p>@reactProps react组件 props属性,必填</p> <p>@example 说明组件使用方法</p> <p>@extends 说明继承组件</p> <p>@return 默认返回React.element,必填</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+* MyComponent 自定义React组件
+* @extends {PureComponent} - React.PureComponent
+* @reactProps {?string} [className=my-component] - 组件react className属性
+* @return {Object} React.element
+* @example
+* import React from 'react';
+* import { FormItem } from 'components/MyComponent';
+* const Test = (props) =&gt; {
+* 	return (
+* 		&lt;MyComponent /&gt;
+* 	);
+</span></code></pre></div></li></ul> <ul><li>};
+*/
+class MyComponent extends React.PureComponent {
+render ( ){...}
+}<div class="language- extra-class"><pre class="language-text"><code>
+
+</code></pre></div></li></ul> <h2 id="_3、引用路径"><a href="#_3、引用路径" class="header-anchor">#</a> 3、引用路径</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// bad</span>
+<span class="token keyword">import</span> autobind <span class="token keyword">from</span> <span class="token string">'../../../utils/autobind'</span>
+
+<span class="token comment">// good</span>
+<span class="token keyword">import</span> autobind <span class="token keyword">from</span> '@<span class="token operator">/</span>utils<span class="token operator">/</span>autobind
+</code></pre></div><h2 id="_4、国际化"><a href="#_4、国际化" class="header-anchor">#</a> 4、国际化</h2> <p>界面多语言采用统一的命名规范，开发者在开发具体功能的时候要按照语言 code 定义描述，不能直接写死描述。</p> <ul><li><p>调用多语言方法</p> <p>首先引入intl类</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> intl <span class="token keyword">from</span> <span class="token string">&quot;utils/intl&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p>调用多语言方法</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">FormItem</span></span>   <span class="token attr-name">label</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>intl<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;hpfm.event.model.event.code&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span><span class="token string">&quot;事件编码&quot;</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+</span></code></pre></div><p>说明:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>intl<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>code<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span>defaultMessage<span class="token punctuation">)</span>
+</code></pre></div><p>code为多语言 code</p> <p>defaultMessage为默认描述，当多语言找不到的情况下返回默认值</p></li> <li><p>多语言CODE命名规范</p> <p>code分为两段：</p> <p>​	第一段：例如hfpm.event， 其中 hpfm 是服务名, event 是功能名</p> <p>​	第二段：第二段分为两种类型：</p> <p>​		模型：</p> <p>​			model.[模型名].[字段名]</p> <p>​			例如： model.event.code 是 event 模型的 code 字段</p> <p>​		视图：</p> <p>​			view.[类型].[具体类型].[具体含义]</p> <p>​			例如：</p> <p>​				验证类型：view.validation.require</p> <p>​				提示类型：view.message.success</p> <p>​				操作类型：view.option.submitOrder</p> <div class="custom-block warning"><p class="custom-block-title">注意：</p> <p>​	多语言code长度不能超过60位字符长度，不允许拼音命名。</p> <p>​	同一服务下，相同code需含义保持一致。</p> <p>​	容中如果包含:以及以{开头，比如用引号包裹下</p></div> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">abc</span><span class="token punctuation">:</span> <span class="token string">&quot;测试:冒号&quot;</span>
+<span class="token key atrule">cde</span><span class="token punctuation">:</span> <span class="token string">&quot;{name} 姓名&quot;</span>
+</code></pre></div></li> <li><p>常用多语言</p> <p>平台通用的编码统一在 hzero.common 下，例如 新建，保存等按钮可以在“平台多语言” 中按照模块 hzero.common 查询</p> <p>必输字段的提示信息：</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">rules</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> <span class="token key atrule">required</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span class="token punctuation">,</span> <span class="token key atrule">message</span><span class="token punctuation">:</span> intl.get('hzero.common.validation.notNull') <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+</code></pre></div><p>长度校验：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+	<span class="token punctuation">{</span>
+		<span class="token literal-property property">max</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+		<span class="token literal-property property">message</span><span class="token operator">:</span> intl<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'hzero.common.validation.max'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">max</span><span class="token operator">:</span> <span class="token number">20</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span>
+</code></pre></div></li></ul> <h2 id="_5、依赖引入"><a href="#_5、依赖引入" class="header-anchor">#</a> 5、依赖引入</h2> <p>应将引入文件归为三类：</p> <p>​	第一类：React、Loadsh、Dav等第三方依赖。</p> <p>​	第二类：Header、numderRender等H0框架提供的工具函数或通用组件。</p> <p>​	第三类：自开发的组件，less文件，util工具函数等。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// bad</span>
+<span class="token keyword">import</span> Detail <span class="token keyword">from</span> <span class="token string">'./Detail'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Header<span class="token punctuation">,</span> Content <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'components/Page'</span><span class="token punctuation">;</span> 
+<span class="token keyword">import</span> <span class="token punctuation">{</span> connect <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'dva'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// good</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> connect <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'dva'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Header<span class="token punctuation">,</span> Content <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'components/Page'</span><span class="token punctuation">;</span> 
+
+<span class="token keyword">import</span> Detail <span class="token keyword">from</span> <span class="token string">'./Detail'</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_6、view、model、service-相互分离"><a href="#_6、view、model、service-相互分离" class="header-anchor">#</a> 6、view、model、service 相互分离</h2> <p>view、model、service应各司其职，需避免相互之间的混用。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// bad</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> service <span class="token operator">=</span> <span class="token punctuation">{</span>
+	<span class="token keyword">async</span> <span class="token function">queryBanks</span><span class="token punctuation">(</span><span class="token parameter">params <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+		<span class="token keyword">const</span> <span class="token punctuation">{</span>
+			page <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">current</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token literal-property property">pageSize</span><span class="token operator">:</span> <span class="token number">10</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+			sort <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'bankCode'</span><span class="token punctuation">,</span> <span class="token literal-property property">order</span><span class="token operator">:</span> <span class="token string">'asc'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> body<span class="token punctuation">,</span>
+		<span class="token punctuation">}</span> <span class="token operator">=</span> params<span class="token punctuation">;</span> 
+		<span class="token keyword">return</span> <span class="token function">request</span><span class="token punctuation">(</span><span class="token constant">URL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// good</span>
+<span class="token comment">// modal </span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createNodeGroup <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../../services/hsgp/nodeGroupService'</span><span class="token punctuation">;</span>
+
+<span class="token literal-property property">effects</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token operator">*</span><span class="token function">createNodeGroup</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> payload <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> call <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">yield</span> <span class="token function">call</span><span class="token punctuation">(</span>createNodeGroup<span class="token punctuation">,</span> payload<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+        <span class="token keyword">return</span> <span class="token function">getResponse</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// service</span>
+<span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">createNodeGroup</span><span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> <span class="token function">request</span><span class="token punctuation">(</span><span class="token constant">URL</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> 
+        <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+		<span class="token literal-property property">body</span><span class="token operator">:</span> params<span class="token punctuation">,</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_7、使用getresponse处理请求"><a href="#_7、使用getresponse处理请求" class="header-anchor">#</a> 7、使用getResponse处理请求</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// bad</span>
+<span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	<span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'concPermission/deleteHeader'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>res <span class="token operator">&amp;&amp;</span> res<span class="token punctuation">.</span>failed<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token operator">...</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// good</span>
+<span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	<span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'concPermission/deleteHeader'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> 
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token operator">...</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// modal</span>
+<span class="token operator">*</span><span class="token function">deleteHeader</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> interfaceServerId <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> call <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">yield</span> <span class="token function">call</span><span class="token punctuation">(</span>deleteHeader<span class="token punctuation">,</span> interfaceServerId<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token keyword">return</span> <span class="token function">getResponse</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_8、公共render-函数使用"><a href="#_8、公共render-函数使用" class="header-anchor">#</a> 8、公共render 函数使用</h2> <p>常用公共render函数：</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">yesOrNoRender</span><span class="token punctuation">:</span>	返回 是/否
+<span class="token key atrule">dateRender</span><span class="token punctuation">:</span>		日期(date)的 render
+<span class="token key atrule">dateTimeRender</span><span class="token punctuation">:</span> 时间(dateTime)的 render
+<span class="token key atrule">timeRender</span><span class="token punctuation">:</span>		时间(time)的 render
+<span class="token key atrule">numberRender</span><span class="token punctuation">:</span>	格式化数值
+<span class="token key atrule">operatorRender</span><span class="token punctuation">:</span>	渲染表格操作列
+<span class="token key atrule">enableRender</span><span class="token punctuation">:</span> 	返回 启用/禁用
+<span class="token key atrule">asyncRender</span><span class="token punctuation">:</span>    返回 同步/异步
+<span class="token key atrule">statusRender</span><span class="token punctuation">:</span>   状态渲染
+<span class="token key atrule">priorityRender</span><span class="token punctuation">:</span> 优先级渲染(低中高)
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// bad</span>
+<span class="token punctuation">{</span>
+	<span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'状态'</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">dataIndex</span><span class="token operator">:</span> <span class="token string">'enabledFlag'</span><span class="token punctuation">,</span>
+	<span class="token function-variable function">render</span><span class="token operator">:</span> <span class="token parameter">val</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token punctuation">(</span> <span class="token operator">&lt;</span>span<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token function">enableRender</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span> <span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// good</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> enableRender<span class="token punctuation">,</span> yesOrNoRender <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'utils/renderer'</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">{</span>
+	<span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'状态'</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">dataIndex</span><span class="token operator">:</span> <span class="token string">'enabledFlag'</span><span class="token punctuation">,</span> <span class="token literal-property property">render</span><span class="token operator">:</span> enableRender<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><h2 id="_9、日期时间"><a href="#_9、日期时间" class="header-anchor">#</a> 9、日期时间</h2> <p>整个工程关于日期时间严格按照统一的规范定义。</p> <p>前后端传递日期格式统一为：</p> <ul><li>日期: YYYY-MM-DD</li> <li>日期时间: YYYY-MM-DD HH:mm:ss</li> <li>时间: HH:mm:ss</li></ul> <p>注意：不要自己直接写死格式，采用统一的常量</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 引入对应的 方法和常量</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> getDateFormat <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'utils/utils'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> <span class="token constant">DEFAULT_DATE_FORMAT</span> <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'utils/constants'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> dateRender <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'utils/renderer'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 在表单中使用</span>
+<span class="token comment">// 提交方法</span>
+<span class="token function">handleSubmit</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+    <span class="token keyword">const</span> formValues <span class="token operator">=</span> form<span class="token punctuation">.</span><span class="token function">getFieldsValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    formValues<span class="token punctuation">.</span>startDate <span class="token operator">=</span>formValues<span class="token punctuation">.</span>startDate <span class="token operator">&amp;&amp;</span> formValues<span class="token punctuation">.</span>startDate<span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span><span class="token constant">DEFAULT_DATE_FORMAT</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// FormItem</span>
+<span class="token keyword">const</span> dateFormat <span class="token operator">=</span> <span class="token function">getDateFormat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+form<span class="token punctuation">.</span><span class="token function">getFieldDecorator</span><span class="token punctuation">(</span><span class="token string">'startDate'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+	<span class="token literal-property property">initialValue</span><span class="token operator">:</span>editRecord<span class="token punctuation">.</span>startDate <span class="token operator">?</span> <span class="token function">moment</span><span class="token punctuation">(</span>editRecord<span class="token punctuation">.</span>startDate<span class="token punctuation">,</span><span class="token constant">DEFAULT_DATE_FORMAT</span><span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>DatePicker format<span class="token operator">=</span><span class="token punctuation">{</span>dateFormat<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment">// Table</span>
+<span class="token keyword">const</span> columns <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        <span class="token literal-property property">dataIndex</span><span class="token operator">:</span> <span class="token string">'startDate'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> intl<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'hmdm.model.bank.startDate'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span><span class="token string">'生效时间'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">render</span><span class="token operator">:</span> dateRender<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_10、缓存组件"><a href="#_10、缓存组件" class="header-anchor">#</a> 10、缓存组件</h2> <p>当列表页跳转至详情页时，应当缓存列表页的查询参数，分页参数。</p> <p>用户返回列表页时，应展示进入详情页前查询到的数据。</p> <p>Hzero:</p> <p>在查询表单Form中引入cacheComponent装饰器，参数为当前列表页的路由。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> cacheComponent <span class="token keyword">from</span> <span class="token string">'components/CacheComponent'</span><span class="token punctuation">;</span>
+
+@<span class="token function">cacheComponent</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">cacheKey</span><span class="token operator">:</span> <span class="token string">'/sscr/inquire-hall/list'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>C7N：</p> <p>在页面列表页文件中，使用withProps装饰器。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> withProps <span class="token keyword">from</span> <span class="token string">'utils/withProps'</span><span class="token punctuation">;</span>
+
+@<span class="token function">withProps</span><span class="token punctuation">(</span>
+  <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">tableDataSet</span><span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">DataSet</span><span class="token punctuation">(</span><span class="token function">tableDs</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+	<span class="token literal-property property">cacheState</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 是否缓存数据状态</span>
+	<span class="token comment">// wait: 50, // 关闭页面之后多久会自动清空缓存 毫秒值</span>
+	<span class="token comment">// cacheKey: ‘key’, // 缓存清除的 key ，用户关联子父页面，当父页面缓存清空时 子页面的缓存也自动清空。</span>
+	<span class="token comment">// cleanWhenClose: true, // 关闭 tabs 时 是否自动清空缓存</span>
+	<span class="token comment">// keepOriginDataSet: true, // 保持原来的 DataSet 对象</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span> 
+</code></pre></div><h2 id="_11、组件拆分原则"><a href="#_11、组件拆分原则" class="header-anchor">#</a> 11、组件拆分原则</h2> <ul><li><p>页面文件</p> <p>当页面代码超过1000行时，应对代码进行合理拆分，方便后续维护与解读。</p></li> <li><p>通用组件</p> <p>当页面组件超过500时，应对代码进行合理拆分，方便后续维护与解读。</p></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2023年2月9日星期四下午5点40分</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/hand-vue-press/standard/1-SRM-UI.html">
+        SRM UI规范
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/hand-vue-press/assets/js/app.ba659284.js" defer></script><script src="/hand-vue-press/assets/js/3.7f8072c2.js" defer></script><script src="/hand-vue-press/assets/js/19.76c3fcf2.js" defer></script>
+  </body>
+</html>
