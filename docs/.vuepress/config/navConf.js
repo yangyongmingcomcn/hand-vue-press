@@ -11,12 +11,12 @@ module.exports = [
     text: "参考资料",
     items: [
       {
-        text: "HZero-UI",
-        link: "https://open.hand-china.com/hzero-ui/index-cn/",
-      },
-      {
         text: "Choerodon-UI",
         link: "https://open-hand.github.io/choerodon-ui/zh/",
+      },
+      {
+        text: "HZero-UI",
+        link: "https://open.hand-china.com/hzero-ui/index-cn/",
       },
       {
         text: "Hips-UI",
